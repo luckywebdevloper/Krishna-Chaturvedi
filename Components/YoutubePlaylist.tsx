@@ -47,11 +47,11 @@ const YoutubePlaylist = () => {
       <div className=" flex">
         <div className=" flex flex-col  gap-5">
           {videoInfo.map((item, idx) => (
-            <Link href={item.link}>
+            <Link href={item.link}   key={item.name}>
               <div className=" videoContainer w-full   bg-gradient-to-r from-indigo-500  p-5  items-centerjustify-center via-purple-500 to-pink-500 rounded-xl">
               <div
                 className=" bg-white w-full  flex  rounded-lg shadow-xl  shadow-gray-900 justify-between p-3 items-center border border-gray-500  "
-                key={item.name}
+              
               >
                 <div className=" w-72">
                   <Image
